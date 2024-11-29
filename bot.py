@@ -25,7 +25,6 @@ def main():
     start_handler = CommandHandler('start', greet_user)
     mybot.add_handler(start_handler)
 
-
     message_handler = MessageHandler(filters.TEXT & ~filters.COMMAND, talk_to_me)
     mybot.add_handler(message_handler)
 
